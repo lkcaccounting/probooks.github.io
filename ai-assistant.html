@@ -6,7 +6,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="AI Assistant">
 <meta name="theme-color" content="#0f1923">
-<title>AI Assistant — LKC Accounting</title>
+<title>AI Assistant — ProBooks</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -187,7 +187,7 @@ html,body{height:100%;background:var(--bg-deepest);color:var(--text-primary);fon
           <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
         </div>
         <h2>Your AI Accountant</h2>
-        <p>Ask me anything about your finances. I read your live LKC Accounting data and tell you exactly what to do next — even when you're offline.</p>
+        <p>Ask me anything about your finances. I read your live ProBooks data and tell you exactly what to do next — even when you're offline.</p>
         <div class="welcome-chips">
           <span class="welcome-chip" onclick="ask('Give me a full summary of my business finances')">Full summary</span>
           <span class="welcome-chip" onclick="ask('Am I making a profit?')">Am I profitable?</span>
@@ -204,7 +204,7 @@ html,body{height:100%;background:var(--bg-deepest);color:var(--text-primary);fon
           <svg viewBox="0 0 16 16"><path d="M2 8L14 2L9 14L7.5 9.5L2 8Z"/></svg>
         </button>
       </div>
-      <p class="input-hint" id="input-hint">Reads your LKC Accounting data automatically</p>
+      <p class="input-hint" id="input-hint">Reads your ProBooks data automatically</p>
     </div>
   </div>
 </div>
@@ -512,7 +512,7 @@ async function sendMsg() {
   // After deploying to Render, replace the URL below with your actual Render URL
   const BACKEND_URL = 'https://lkc-ai-backend.vercel.app/api/chat';
 
-  const systemPrompt = `You are a smart AI accounting assistant built into LKC Accounting — a professional accounting app for African businesses.
+  const systemPrompt = `You are a smart AI accounting assistant built into ProBooks — a professional accounting app for African businesses.
 
 Your job: analyze the user's real business data below and give SHORT, DIRECT, ACTIONABLE advice.
 
