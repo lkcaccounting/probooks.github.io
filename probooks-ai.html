@@ -641,7 +641,7 @@ async function fire(userText) {
     const msgs = history[agent].slice(0,-1).map(m=>({role:m.role,content:m.content}));
     msgs.push({role:'user',content});
 
-    const r = await fetch('https://api.anthropic.com/v1/messages', {
+    const r = await fetch('https://YOUR-SITE-NAME.netlify.app/.netlify/functions/ai', {
       method:'POST',
       headers:{
         'Content-Type':'application/json',
